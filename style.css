@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.slide{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section.one .slide{
+    background-image: url(media/taylor_swift.jpg);
+}
+.section.two .slide.one{
+    background-image: url(media/fearless/1.jpg);
+}
+.section.two .slide.two{
+    background-image: url(media/fearless/2.jpg);
+}
+.section.two .slide.three{
+    background-image: url(media/fearless/3.jpg);
+}
+.section::after {
+    content:'';
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.6;
+    z-index: 5;
+}
+
+.title {
+    font-size: 12rem;
+    text-align: center;
+    color: #fff;
+    font-family:cursive;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 70%;
+    text-transform: capitalize;
+    padding: 2rem;
+}
+.fp-watermark{
+    display: none;
+}
+.fp-controlArrow.fp-next {
+    background-image: url(media/icons/right_arrow.png);
+}
+.fp-controlArrow.fp-prev {
+    background-image: url(media/icons/left_arrow.png);
+    margin-right: 20px;
+}
+.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+    height: 6em;
+    z-index: 10;
+    width: 6rem !important;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
